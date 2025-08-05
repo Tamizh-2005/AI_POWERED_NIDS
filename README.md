@@ -46,6 +46,6 @@
     - Encrypted traffic analysis support
    
     ## 👩‍💻 **Credits**
-    Supriya Amudapaku, BCA – Sri Kanyaka Parameswari Arts and Science College  
+    Tamilkumar P,J.J. College of Engineering and Technology.
     Internship: Cybernaut Programming Intern | IBM SkillsBuild | Edunet Foundation  
     Tools Used: Python, IBM Watson, watsonx.ai, AutoAI, sklearn, seaborn
