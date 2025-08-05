@@ -76,7 +76,6 @@ Build an intelligent **Network Intrusion Detection System** that can detect and 
 
 - 🎓 **IBM SkillsBuild** – watsonx.ai Agent Lab (Verified)
 - 🧠 **IBM** – AI Lifecycle Management on IBM Cloud
-- 🛡️ **Edunet Foundation** – Cybersecurity Internship Certificate
 
 ---
 
