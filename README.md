@@ -1,76 +1,98 @@
 # ⚔️ Network Intrusion Detection System (NIDS) using IBM watsonx.ai
 
-A machine learning solution to detect, classify, and analyze cybersecurity threats in real-time network traffic. This project leverages supervised learning techniques to monitor packets and identify potential intrusions.
+A machine learning-powered solution for detecting and classifying network intrusions in real-time using IBM watsonx.ai. This system utilizes supervised learning techniques to identify various types of network attacks based on structured traffic data.
 
 ---
 
-## 📚 Problem Statement
+## 📚 Project Objective
 
-Design a robust Network Intrusion Detection System (NIDS) that classifies network connections into **normal** or various **attack types** (e.g., DoS, Probe, R2L, U2R). The system must efficiently handle categorical and continuous features to ensure high accuracy and low false positives.
+Build an intelligent **Network Intrusion Detection System** that can detect and classify network activity as either **normal** or **attack** (DoS, Probe, R2L, U2R) with high accuracy and low false positives using machine learning models trained in IBM watsonx.ai.
 
 ---
 
 ## 🔗 Dataset
 
-**Kaggle**: [KDD Cup 99 / NSL-KDD Dataset](https://www.kaggle.com/datasets/ghazouaniabdellatif/nslkdd)  
-- Used pre-processed Train and Test splits  
-- Supports classification into multiple attack categories
+**Source**: [NSL-KDD Dataset on Kaggle](https://www.kaggle.com/datasets/ghazouaniabdellatif/nslkdd)  
+- Improved version of the KDD Cup 1999 dataset  
+- Includes pre-split Train and Test sets  
+- Labeled for multiclass classification
 
 ---
 
 ## 🛠️ Technology Stack
 
 - **Platform**: IBM watsonx.ai Studio
-- **Runtime**: watsonx.ai + IBM Granite Model
-- **Modeling**: Jupyter Notebooks (Manual + AutoAI integration)
-- **Deployment**: IBM Cloud Lite
-- **Tools**: watsonx.ai Agent Lab, AutoAI, Watson Pipelines
-- **Datacenter Regions**: Chennai and Sydney
+- **Environment**: Jupyter Notebooks (Manual + AutoAI)
+- **Modeling Tools**: sklearn, pandas, seaborn, matplotlib
+- **Deployment**: IBM Cloud Lite (REST API)
+- **Cloud Regions**: Chennai 🇮🇳, Sydney 🇦🇺
+- **Additional Tools**: watsonx.ai Agent Lab, Watson Pipelines, AutoAI
 
 ---
 
-## 🧪 Features
+## ⚙️ Features
 
-- Attack type classification: **DoS**, **Probe**, **R2L**, **U2R**, **Normal**
+- Classifies traffic as: `Normal`, `DoS`, `Probe`, `R2L`, `U2R`
 - Label encoding and feature scaling pipeline
-- Confusion matrix and performance visualizations
-- Feature importance analysis using Random Forest
-- Secure model deployment via IBM Cloud
+- Train/Test split and evaluation metrics
+- Random Forest feature importance analysis
+- Confusion matrix and classification report visualizations
+- Model deployment with accessible REST API endpoint
 - AutoAI pipeline integration with tunable hyperparameters
-- Train/test split with robust evaluation metrics
 
 ---
 
 ## 🚀 Setup Instructions
 
-1. Login to **IBM Cloud**
-2. Open **watsonx.ai Studio** → Create New Project
-3. Upload CSV datasets and Jupyter Notebook
-4. Use **AutoAI** or manual ML pipeline to train and evaluate the model
-5. Deploy model and connect REST API endpoint for inference
-6. Visualize metrics and download evaluation reports
+1. **Login to IBM Cloud**: [https://cloud.ibm.com](https://cloud.ibm.com)
+2. Launch **watsonx.ai Studio** → Create a new project
+3. Upload the dataset (`KDDTrain+`, `KDDTest+`) and `notebook.ipynb`
+4. Use **AutoAI** or manual pipeline to train the model
+5. Evaluate and deploy the model via **Watson ML Deployment**
+6. Access the API endpoint for real-time intrusion detection
+7. Optionally, visualize results and download evaluation reports
 
 ---
 
-## 🏆 Certifications
+## 📊 Model Evaluation
 
-- IBM SkillsBuild: **watsonx.ai Agent Lab**
-- IBM: **AI Lifecycle & Deployment on Cloud**
-- Edunet Foundation: **Cybersecurity Internship Completion Certificate**
+- Accuracy: ~90%+
+- Precision, Recall, F1-Score: Varies by attack category
+- Confusion matrix analysis for model behavior
+- Feature importance chart using Random Forest
 
 ---
 
 ## 🧠 Future Enhancements
 
-- Integration with real-time packet capture (PCAP)
-- Deep learning upgrade (CNN-LSTM hybrid model)
-- Web-based dashboard for intrusion alerts
-- Support for encrypted traffic analysis
+- Real-time packet stream integration (PCAP)
+- CNN-LSTM hybrid for sequential deep learning
+- Interactive web dashboard with live alerts
+- Support for encrypted (TLS/SSL) traffic analysis
 
 ---
 
-## 👩‍💻 Credits
+## 🏅 Certifications
 
-**Tamilkumar P**, CSE(Cyber Security) – J.J College Of Engineering And Technology
-**Internship**: Cybernaut Programming Intern | IBM SkillsBuild | Edunet Foundation  
-**Tools Used**: Python, IBM Watson, watsonx.ai, AutoAI, sklearn, seaborn
+- 🎓 **IBM SkillsBuild** – watsonx.ai Agent Lab (Verified)
+- 🧠 **IBM** – AI Lifecycle Management on IBM Cloud
+- 🛡️ **Edunet Foundation** – Cybersecurity Internship Certificate
+
+---
+
+## 👨‍💻 Author
+
+**Tamilkumar P**  
+CSE (Cyber Security), J.J College Of Engineering And Technology  
+Intern | IBM SkillsBuild x Edunet Foundation  
+
+
+---
+
+
+## ⭐ Acknowledgements
+
+- IBM watsonx.ai Team  
+- Edunet Foundation  
+- NSL-KDD Dataset Authors  
+- Mentors and Trainers from the Cybersecurity Internship
